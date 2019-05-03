@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>MI PRIMER FORMULARIO</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="formulariojs.js"></script>
+</head>
+<body>
+    <form type="formulario" action="" id="formulario" name="formulario">
+        <h1>FORMULARIO</h1>
+        <div>
+            Escriba su nombre:
+            <input type="name" maxlength="20" id="nombre" class="nombre" name="firstname" datatype="text" placeholder="Digite su nombre">
+        </div>
+        <div>
+            Ingrese su apellido:
+            <input type="apellido" maxlength="20" id="apellido" class="apellido" name="lasttname" datatype="text" placeholder="Digite su  apellido">
+        </div>
+        <div>
+            Edad:
+            <input type="edad" id="edad" class="edad" placeholder="Digite su edad" maxlength="2" >
+        </div>
+        <div>
+            Digite su contraseña:
+            <input type="password" maxlength="20" id="pass" name="contraseña" class="pass" placeholder="Digite su contraseña">
+        </div>
+        <div>
+            Ingrese su correo electronico:
+            <input type="email" maxlength="30" class="email" id="email"0 name="email" placeholder="Digite su correo electronico">
+        </div>
+        <div>
+            Sexo:
+            <br>
+            <p>
+                <input type="radio" name="sex" id="sexo" value="Hombre">HOMBRE
+                <input type="radio" name="sex" id="sexo" value="Mujer">MUJER
+            </p>
+        </div>
+        <div>
+            <p>
+                <label for="idiomas">IDIOMAS</label>
+                <select id="idiomas" name="idiomas">
+                    <option value=" ">Seleccione</option>
+                    <option>Ingles</option>
+                    <option>Español</option>
+                </select>
+            </p>
+        </div>
+        <div>
+            Otros idiomas:
+            <textarea name="otrosidiomas" maxlength="50" id="idioma" cols="15" rows="2"></textarea>
+        </div>
+        <div>
+            Descripcion:
+            <textarea name="descripcion"  maxlength="100" id="descripcion" cols="20" rows="8"></textarea>
+        </div>
+        <span>
+            <input type="checkbox"  class="aceptar" id="acepto" name="boton" value="SI">Acepta los terminos de la pagina.
+        </span>
+        <div>
+            <button type="button" id="enviar" name="enviar" value="Enviar">ENVIAR</button>
+        </div>
+    </form>
+    
+
+</body>
+</html>
